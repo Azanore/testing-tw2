@@ -2,27 +2,27 @@ function Features() {
   const features = [
     {
       title: "Design Tokens",
-      description: "Centralize colors, typography, spacing, and more. Sync across design tools and code automatically."
+      description: "Centralize colors, typography, spacing, and more. Automatically sync with Figma, Sketch, and your codebase."
     },
     {
       title: "Component Library",
-      description: "Build reusable components with variants, states, and comprehensive documentation."
+      description: "Build reusable components with variants, states, and comprehensive documentation. Export to React, Vue, Angular, and native platforms."
     },
     {
       title: "Version Control",
-      description: "Track changes, manage releases, and collaborate with your team using Git-like workflows."
+      description: "Track changes, manage releases, and collaborate with your team using Git-like workflows with GitHub integration."
     },
     {
-      title: "Multi-Platform Export",
-      description: "Generate code for React, Vue, Angular, iOS, Android, and more from a single source."
+      title: "Live Code Generation",
+      description: "Generate production-ready code that stays in sync with your designs. Support for TypeScript, Tailwind CSS, and popular frameworks."
     },
     {
       title: "Design Tool Sync",
-      description: "Keep Figma, Sketch, and Adobe XD libraries in perfect sync with your code components."
+      description: "Two-way sync with Figma, Sketch, and Adobe XD. Changes in design files automatically update your system and vice versa."
     },
     {
       title: "Documentation Hub",
-      description: "Auto-generated docs with live examples, usage guidelines, and interactive playground."
+      description: "Auto-generated docs with live examples, usage guidelines, and interactive playground. Integrates with Storybook and Notion."
     }
   ]
 
@@ -42,7 +42,7 @@ function Features() {
         {/* Feature Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="border border-wire-border rounded-xl p-6 hover:shadow-sm transition-shadow">
+            <div key={index} className="border border-wire-border rounded-xl p-6">
               <div className="w-12 h-12 bg-wire-surface border border-wire-border rounded-lg mb-4"></div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-wire-text-secondary">{feature.description}</p>

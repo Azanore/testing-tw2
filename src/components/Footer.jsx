@@ -1,9 +1,9 @@
 function Footer() {
   const footerLinks = {
-    Product: ["Features", "Pricing", "Integrations", "API"],
-    Resources: ["Documentation", "Tutorials", "Blog", "Community"],
-    Company: ["About", "Careers", "Press", "Contact"],
-    Legal: ["Privacy", "Terms", "Security", "Cookies"]
+    Product: ["Features", "Pricing", "Demo", "API Docs"],
+    Resources: ["Documentation", "Templates", "Blog", "Community"],
+    Company: ["About", "Careers", "Customers", "Contact"],
+    Legal: ["Privacy", "Terms", "Security", "Status"]
   }
 
   return (
@@ -16,7 +16,7 @@ function Footer() {
               <ul className="space-y-2 text-sm text-wire-text-secondary">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="hover:text-wire-text-primary">{link}</a>
+                    <a href="#" className="">{link}</a>
                   </li>
                 ))}
               </ul>

@@ -3,13 +3,17 @@ function Pricing() {
     {
       name: "Starter",
       price: "Free",
+      yearlyPrice: "Free",
       description: "Perfect for individuals and small projects",
       features: ["1 design system", "Basic components", "Community support", "Export to 2 platforms"]
     },
     {
       name: "Professional",
       price: "$29",
+      yearlyPrice: "$290",
       period: "/month",
+      yearlyPeriod: "/year",
+      savings: "Save $58",
       description: "For growing teams and multiple projects",
       features: ["Unlimited design systems", "Advanced components", "Priority support", "All platform exports", "Team collaboration", "Version history"],
       popular: true
@@ -17,6 +21,7 @@ function Pricing() {
     {
       name: "Enterprise",
       price: "Custom",
+      yearlyPrice: "Custom",
       description: "For large organizations with custom needs",
       features: ["Everything in Professional", "SSO & advanced security", "Custom integrations", "Dedicated support", "SLA guarantee"]
     }
@@ -32,6 +37,17 @@ function Pricing() {
           <p className="text-lg text-wire-text-secondary max-w-2xl mx-auto">
             Start free and scale as your team grows. No hidden fees, no surprises.
           </p>
+
+          {/* Billing Toggle */}
+          <div className="flex items-center justify-center mt-8 mb-8">
+            <span className="text-wire-text-secondary mr-3">Monthly</span>
+            <div className="relative">
+              <div className="w-12 h-6 bg-wire-border rounded-full"></div>
+              <div className="absolute top-1 left-1 w-4 h-4 bg-white rounded-full shadow-sm"></div>
+            </div>
+            <span className="text-wire-text-secondary ml-3">Yearly</span>
+            <span className="ml-2 text-sm bg-wire-accent text-white px-2 py-1 rounded-full">Save 20%</span>
+          </div>
         </div>
 
         {/* Pricing Cards */}
@@ -47,9 +63,12 @@ function Pricing() {
               <div className="mb-4">
                 <span className="text-3xl font-bold">{plan.price}</span>
                 {plan.period && <span className="text-wire-text-secondary">{plan.period}</span>}
+                {plan.savings && (
+                  <div className="text-sm text-wire-accent mt-1">{plan.savings}</div>
+                )}
               </div>
               <p className="text-wire-text-secondary mb-6">{plan.description}</p>
-              <button className={`w-full py-3 rounded-lg font-medium mb-6 ${plan.popular ? 'bg-wire-accent text-white' : 'border border-wire-border hover:bg-wire-surface'}`}>
+              <button className={`w-full py-3 rounded-lg font-medium mb-6 ${plan.popular ? 'bg-wire-accent text-white' : 'border border-wire-border'}`}>
                 {plan.name === 'Enterprise' ? 'Contact Sales' : 'Get Started'}
               </button>
               <ul className="space-y-3">

@@ -11,12 +11,28 @@ function Hero() {
             From design tokens to component libraries, everything in one platform.
           </p>
 
+          {/* Trust Indicators */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8 text-sm text-wire-text-secondary">
+            <div className="flex items-center">
+              <div className="w-4 h-4 bg-wire-accent rounded-full mr-2"></div>
+              50,000+ active users
+            </div>
+            <div className="flex items-center">
+              <div className="w-4 h-4 bg-wire-accent rounded-full mr-2"></div>
+              4.9/5 rating
+            </div>
+            <div className="flex items-center">
+              <div className="w-4 h-4 bg-wire-accent rounded-full mr-2"></div>
+              SOC 2 certified
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button className="bg-wire-accent text-white px-8 py-4 rounded-lg text-lg font-medium hover:opacity-90">
-              Start Building Free
+            <button className="bg-wire-accent text-white px-8 py-4 rounded-lg text-lg font-medium">
+              Start Free Trial
             </button>
-            <button className="border border-wire-border px-8 py-4 rounded-lg text-lg font-medium hover:bg-wire-surface">
+            <button className="border border-wire-border px-8 py-4 rounded-lg text-lg font-medium">
               Watch Demo
             </button>
           </div>

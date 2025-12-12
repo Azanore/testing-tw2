@@ -9,10 +9,10 @@ function CTA() {
           Join thousands of designers and developers who are building better products with DesignFlow.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-wire-accent px-8 py-4 rounded-lg text-lg font-medium hover:opacity-90">
+          <button className="bg-white text-wire-accent px-8 py-4 rounded-lg text-lg font-medium">
             Start Free Trial
           </button>
-          <button className="border border-white/30 px-8 py-4 rounded-lg text-lg font-medium hover:bg-white/10">
+          <button className="border border-white/30 px-8 py-4 rounded-lg text-lg font-medium">
             Schedule Demo
           </button>
         </div>
